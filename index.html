@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celsius to fahrenheit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>convert celsius to fahrenheit</h2>
+    <div class="overall">
+        <div class="content">
+            <div class="contentone">
+            <p><label for="celsius">Enter celsius</label></p>
+            <p><input type="number" name="celsius" id="celsius" placeholder="enter value"></p>
+            <button type="button" onclick="conv()">Convert</button>
+            <div id="result">
+
+            </div>
+         </div>
+    </div>
+</div>
+<script>
+function conv(){
+        let cn=Number(document.getElementById("celsius").value);
+        let fah=((cn*9/5)+32);
+        let result=document.getElementById("result");
+        result.innerHTML=fah +" degree fahrenheit"
+    }
+    </script>
+</body>
+</html>
